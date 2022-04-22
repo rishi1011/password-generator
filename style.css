@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2d132c;
+    color: #fff;
+}
+
+.container{
+    background-color: #c72c41;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 0 10px 1px black;
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.result-container{
+    background-color: #801336;
+    padding: 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.result{
+    width: calc(100% - 40px);
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.btn{
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    background-color: #ee4540;
+    cursor: pointer;
+    transition: transform 0.7s ease-out;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.btn#clipboard{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 1.6rem;
+}
+
+.setting{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+input[type="checkbox"]{
+    height: 0px;
+    width: 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    height: 20px;
+    width: 20px;
+    background-color: #801336;
+}
+
+input[type="checkbox"]:checked::after{
+    content: '\2714';
+    position: absolute;
+    top: -9px;
+    left: -17px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+input[type="number"]{
+    height: 25px;
+    width: 43px;
+    background-color: #801336;
+    padding: 3px;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.btn.btn-large{
+    padding: 8px;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 450px) {
+    .container{
+        width: 350px;
+    }
+
+    .result {
+        font-size: 1.1rem;
+    }
+
+    .btn#clipboard{
+        font-size: 1.4rem;
+    }
+
+    .btn.btn-large{
+        font-size: 1.1rem;
+    }
+
+    .setting{
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 440px) {
+    body{
+        justify-content: flex-start;
+        padding: 2rem;
+    }
+}
+
+
+
+
+
