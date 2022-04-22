@@ -16,6 +16,7 @@ body {
     margin: 0;
     background-color: #2d132c;
     color: #fff;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .container{
@@ -53,11 +54,11 @@ h2 {
     border: none;
     background-color: #ee4540;
     cursor: pointer;
-    transition: transform 0.7s ease-out;
+    transition: transform 0.2s linear;
 }
 
 .btn:active{
-    transform: scale(0.9);
+    transform: scale(0.98);
 }
 
 .btn#clipboard{
