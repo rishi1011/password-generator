@@ -76,6 +76,7 @@ h2 {
     margin: 15px 0;
     justify-content: space-between;
     font-size: 1.2rem;
+    height: 25px;
 }
 
 input[type="checkbox"]{
@@ -88,10 +89,10 @@ input[type="checkbox"]{
 input[type="checkbox"]::before{
     content: '';
     position: absolute;
-    top: -10px;
-    left: -20px;
-    height: 20px;
-    width: 20px;
+    top: -12px;
+    left: -25px;
+    height: 25px;
+    width: 25px;
     background-color: #801336;
 }
 
@@ -99,7 +100,7 @@ input[type="checkbox"]:checked::after{
     content: '\2714';
     position: absolute;
     top: -9px;
-    left: -17px;
+    left: -19px;
     color: #fff;
     font-size: 1rem;
 }
