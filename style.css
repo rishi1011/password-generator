@@ -122,7 +122,7 @@ input[type="number"]{
 
 @media (max-width: 450px) {
     .container{
-        width: 350px;
+        width: 340px;
     }
 
     .result {
