@@ -17,14 +17,17 @@ const randomFunc = {
 
 generateBtn.addEventListener('click', updatePasswordToResult);
 
+clipboardBtn.addEventListener('click', () => {
+    if (resultEl.innerText === '') return;
+    navigator.clipboard.writeText(resultEl.innerText);
+})
+
 function updatePasswordToResult() {
     const hasUpper = uppercaseEl.checked;
     const hasLower = lowercaseEl.checked;
     const hasSymbols = symbolsEl.checked;
     const hasNumbers = numbersEl.checked;
     const length = lengthEl.value; 
-
-    console.log(length);
 
     resultEl.innerText = generatePassword(hasUpper, hasLower, hasSymbols, hasNumbers, length);
 }
